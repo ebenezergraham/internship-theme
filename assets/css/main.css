@@ -43,6 +43,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 #links li a {
 	text-decoration: none;
  font-size: 14px;
+ display: inline-block;
 }
 .banner-full{
 	background-image:url(../images/banner.jpeg);
