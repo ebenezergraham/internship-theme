@@ -7,16 +7,12 @@ html, body, div, span,  h1, h2, h3, h4, h5, h6, p, blockquote, pre, a,  em, img,
 		padding: 0;
 		border: 0;
 		font-size: 100%;
-		font: inherit;
-		vertical-align: baseline;
-	}
-
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-		display: block;
+		font-family: poppins;
 	}
 
 	body {
 		line-height: 1;
+
 	}
 
 	ol, ul {
@@ -25,8 +21,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
  #menu{
 	 float: right;
-	 padding: 5px 5px;
-
+	 padding: 15px 5px;
+	position: relative;
  }
 	.card{
 		width: 400px;
@@ -35,15 +31,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 		padding: 3px;
 		margin: 4px;
 	}
-#links li {
+.links li {
 	display: inline;
-	margin: 2px 100px;
+	margin: 20px 25px;
 }
 
-#links li a {
+.links li a {
 	text-decoration: none;
- font-size: 14px;
- display: inline-block;
+ font-size: 18px;
+ display: inline;
 }
 .banner-full{
 	background-image:url(../images/banner.jpeg);
@@ -52,6 +48,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 #particles-js{
 text-align: center;
+vertical-align: middle;
 }
 #typed-wrapper{
 	position: relative;
