@@ -1,9 +1,7 @@
-/*Visit http://vincentgarreau.com/particles.js/ to change the appearance of the particles. You can can use the generator on the site to modify the particles and export as JSON and copy and pasted the content of that file after the first curly bracket. */
-
-particlesJS("particles-js", 
+particlesJS("particles-js",
 {
   "particles": {
-   "number": {
+    "number": {
       "value": 80,
       "density": {
         "enable": true,
@@ -11,13 +9,13 @@ particlesJS("particles-js",
       }
     },
     "color": {
-      "value": "#ffffff"
+      "value": "#aeaeae"
     },
     "shape": {
       "type": "circle",
       "stroke": {
-        "width": 0,
-        "color": "#000000"
+        "width": 1,
+        "color": "#adadad"
       },
       "polygon": {
         "nb_sides": 5
@@ -30,7 +28,7 @@ particlesJS("particles-js",
     },
     "opacity": {
       "value": 0.5,
-      "random": false,
+      "random": true,
       "anim": {
         "enable": false,
         "speed": 1,
@@ -39,10 +37,10 @@ particlesJS("particles-js",
       }
     },
     "size": {
-      "value": 3,
+      "value": 5,
       "random": true,
       "anim": {
-        "enable": false,
+        "enable": true,
         "speed": 40,
         "size_min": 0.1,
         "sync": false
@@ -71,15 +69,15 @@ particlesJS("particles-js",
     }
   },
   "interactivity": {
-    "detect_on": "canvas",
+    "detect_on": "window",
     "events": {
       "onhover": {
         "enable": true,
-        "mode": "repulse"
+        "mode": "bubble"
       },
       "onclick": {
         "enable": true,
-        "mode": "push"
+        "mode": "repulse"
       },
       "resize": true
     },
@@ -91,10 +89,10 @@ particlesJS("particles-js",
         }
       },
       "bubble": {
-        "distance": 400,
-        "size": 40,
+        "distance": 300,
+        "size": 20,
         "duration": 2,
-        "opacity": 8,
+        "opacity": 0.6171786813490223,
         "speed": 3
       },
       "repulse": {

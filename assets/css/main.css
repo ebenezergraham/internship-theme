@@ -23,25 +23,53 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 		list-style: none;
 	}
 
-.banner-full{
-	background-color:blue;
+ #menu{
+	 float: right;
+	 padding: 5px 5px;
+
+ }
+	.card{
+		width: 400px;
+		height: auto;
+		box-shadow: 2px 2px solid #aeaeae;
+		padding: 3px;
+		margin: 4px;
+	}
+#links li {
+	display: inline;
+	margin: 2px 100px;
 }
 
+#links li a {
+	text-decoration: none;
+ font-size: 14px;
+}
+.banner-full{
+	background-image:url(../images/banner.jpeg);
+	background-size:cover;
+
+}
+#particles-js{
+text-align: center;
+}
 #typed-wrapper{
-	position: absolute;
+	position: relative;
 	top: 50%;
-	left: 40%;
 	font-size: 2.5em;
 	font-weight: bold;
 	color: #fff;
-}
+	box-sizing: inherit;
 
+}
+#typed{
+	text-align: center;
+}
 #footer {
 	padding: 4em 0 2em 0 ;
 	background: #000;
 	text-align: center;
 	}
-	
+
 #footer ul.icons li {
     display: inline-block;
     padding: 0 1rem 0 0;
