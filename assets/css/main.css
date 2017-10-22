@@ -30,7 +30,8 @@ html, body, div, span,  h1, h2, h3, h4, h5, h6, p, blockquote, pre, a,  em, img,
 		box-shadow: 2px 2px solid #aeaeae;
 		padding: 3px;
 		margin: 4px;
-	}
+}
+
 .links li {
 	display: inline;
 	margin: 20px 25px;
@@ -38,30 +39,62 @@ html, body, div, span,  h1, h2, h3, h4, h5, h6, p, blockquote, pre, a,  em, img,
 
 .links li a {
 	text-decoration: none;
- font-size: 18px;
+ font-size: 0.8 em;
  display: inline;
+ color: #fff;
+ font-weight: 600;
 }
+
+.links li a: hover{
+	text-decoration-style: wavy;
+}
+
 .banner-full{
-	background-image:url(../images/banner.jpeg);
+	background-image:url(../images/bush.jpeg);
 	background-size:cover;
 
 }
+
 #particles-js{
 text-align: center;
 vertical-align: middle;
 }
+
 #typed-wrapper{
-	position: relative;
+	position: absolute;
 	top: 50%;
 	font-size: 2.5em;
 	font-weight: bold;
 	color: #fff;
 	box-sizing: inherit;
+	width: 1000px
+
+
 
 }
 #typed{
 	text-align: center;
+	width: inherit;
 }
+
+.parallax{
+	background-image: url(../images/umbrella.jpg);
+	height: 41%;
+	background-size: cover;
+	background-attachment: fixed;
+
+}
+.parallax-line{
+	width: 200px;
+	height: 0;
+	margin-top: 50px;
+}
+
+#second-parallax{
+	background-image: url(../images/banner.jpeg);
+
+}
+
 #footer {
 	padding: 4em 0 2em 0 ;
 	background: #000;
@@ -73,10 +106,13 @@ vertical-align: middle;
     padding: 0 1rem 0 0;
 }
 
-.icon > .label {
-	display: none;
+.label {
+	margin: 10px;
+	font-size: 0.7em;
 }
-
+.label a {
+	text-decoration: none;
+}
 #footer a {
 	color: rgba(255, 255, 255, 0.5);
 }
@@ -87,8 +123,8 @@ vertical-align: middle;
 
 #footer .copyright {
 	color: #bbb;
-	font-size: 0.9em;
-	margin: 0 0 2em 0;
+	font-size: 0.7em;
+	margin: 20px;
 	padding: 0;
 	text-align: center;
 }
