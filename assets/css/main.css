@@ -19,19 +19,93 @@ html, body, div, span,  h1, h2, h3, h4, h5, h6, p, blockquote, pre, a,  em, img,
 		list-style: none;
 	}
 
+h1{
+	font-size: 1.5em;
+	font-weight: 600;
+	margin: 0.5em;
+}
+
+h2{
+	font-size:1.4em;
+	font-weight: 600;
+	margin: 0.4em;
+	text-align: center;
+}
+
+h3{
+	font-size: 1.3em;
+	font-weight: 600;
+	margin: 0.3em;
+}
+
+h4{
+	font-size: 1.2em;
+	font-weight: 600;
+	margin: 0.3em;
+}
+
+h5{
+	font-size: 1.1em;
+	font-weight: 600;
+	margin: 0.1em;
+}
+
+h6{
+	font-size: 1em;
+	font-weight: 600;
+	margin: 0.1em;
+}
+
  #menu{
 	 float: right;
 	 padding: 15px 5px;
 	position: relative;
  }
+
+ .side-menu{
+	 position: fixed;
+	 display: none;
+	 background-color: #073642;
+	 width: 200px;
+	 height: 100%;
+	 padding: 10px;
+ }
+ .side-menu ul li {
+
+ }
+
+ #menu-toggle{
+	 position: fixed;
+	 left: 20px;
+	 top: 28px;
+	 color: white;
+	 z-index: 10;
+ }
+ #calltoaction{
+	 padding: 10px;
+	 background-color: #fff;
+	 border: #1d1d1d;
+	 position: absolute;
+
+ }
+ #side-menu-close{
+	 float: right;
+ }
 	.card{
 		width: 400px;
 		height: auto;
-		box-shadow: 2px 2px solid #aeaeae;
+		box-shadow: 2px 2px rgb(255,255,255);
 		padding: 3px;
 		margin: 4px;
 }
 
+#side-menu-links{
+	margin-top: 50px;
+}
+#side-menu-links li{
+	display: block;
+	margin: 1.5em 1.5em;
+}
 .links li {
 	display: inline;
 	margin: 20px 25px;
@@ -39,13 +113,13 @@ html, body, div, span,  h1, h2, h3, h4, h5, h6, p, blockquote, pre, a,  em, img,
 
 .links li a {
 	text-decoration: none;
- font-size: 0.8 em;
+ font-size: 0.8em;
  display: inline;
  color: #fff;
  font-weight: 600;
 }
 
-.links li a: hover{
+.links li a:hover{
 	text-decoration-style: wavy;
 }
 
@@ -67,10 +141,14 @@ vertical-align: middle;
 	font-weight: bold;
 	color: #fff;
 	box-sizing: inherit;
-	width: 1000px
+	width: 1000px;
+	margin-left: 40%;
 
 
 
+}
+#map{
+	height: 300px;
 }
 #typed{
 	text-align: center;

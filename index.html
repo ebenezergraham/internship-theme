@@ -14,8 +14,8 @@
 <body>
 
 	<!-- Nav -->
+		<i class="fa fa-bars" id="menu-toggle" title="Menu"></i>
 	<nav id="menu">
-		<span id="Logo">Group -2</span>
 
 		<ul class="links">
 			<li><a href="index.html">HOME</a></li>
@@ -25,16 +25,17 @@
 			<li><a href="#diary">DIARY</a></li>
 		</ul>
 	</nav>
+
 	<nav class="side-menu">
-		<i class="fa fa-bars" title="Menu"></i>
+
 		<div>
-			<i class="fa fa-arrows-alt" title="Close"></i>
-			<ul>
-				<li>HOME</li>
-				<li>BACKGROUND</li>
-				<li>BLOG</li>
-				<li>APPLICATION</li>
-				<li>DIARY</li>
+			<i class="fa fa-arrows-alt" title="Close" id="side-menu-close"></i>
+			<ul class="links" id="side-menu-links">
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="#background">BACKGROUND</a></li>
+				<li><a href="#blog">BLOG</a></li>
+				<li><a href="#application">APPLICATION</a></li>
+				<li><a href="#diary">DIARY</a></li>
 			</ul>
 			<hr />
 			<ul class="icons">
@@ -50,11 +51,18 @@
 	<!-- Banner -->
 	<section class="banner-full">
 		<!-- Space for the moving particles to occupy. -->
-		<div id="particles-js"></div>
-		<div id="typed-wrapper">
-			<span id="typed"> </span>
+		<div id="particles-js">
+
+		</div>
+		<div>
+			<div id="typed-wrapper">
+				<span id="typed"> </span>
+
+			</div>
 			<button id="calltoaction">Leave a message</button>
 		</div>
+
+
 	</section>
 	<div id="background">
 		<aside>
@@ -62,7 +70,8 @@
 			<img src="">
 			<img src="">
 		</aside>
-		<section <h6>Introduction</h6>
+		<section>
+			<h2>Introduction</h2>
 			<p class="card">I am Ebenezer Kwesi Akyen Graham, and I intern with Cim Finance a subsidiary of Cim Group. Cim Finance is located in the heart of Port Louis, Mauritius.
 			</p>
 			<p class="card">As an IT Department Intern; I do not have a particular role. However, I am obligated to assist other full-time employees with their tasks and learn from them in the process. Some of my roles include but are not limited to assisting the System Administrators
@@ -71,13 +80,13 @@
 			<p class="card"></p>
 
 		</section>
-		<div id="gmap">
-			<script async defer src="https://maps.googleapis.com/maps/api/js?key=YAIzaSyCHQwS2KH_ljT6JkRTl5p0ax-qRiJaGYOE callback=gmap">
-			</script>
+		<div id="map">
+
 		</div>
 
 	</div>
 	<section class="roles">
+		<h2>Roles</h2>
 		<div class="roles-left">
 			<span></span>
 			<h4>Release Testing</h4>
@@ -95,8 +104,8 @@
 		</div>
 
 		<div class="roles-right">
-			<span>Software Development</span>
-			<h4></h4>
+			<span></span>
+			<h4>Software Development</h4>
 			<p></p>
 		</div>
 	</section>
@@ -163,13 +172,13 @@
 		<hr class="parallax-line" />
 	</div>
 	<div id="blog">
-		<h2>BLOG</h2>
+		<h2>Blog</h2>
 
 	</div>
 	<div id="application">
 		<section>
-			<h2>DIARY</h2>
-			<h3>What I would do differently</h3>
+			<h2>Diary</h2>
+			<h4>What I would do differently</h4>
 			<p>
 				I would start searching for internship early.
 			<p/>
@@ -180,10 +189,10 @@
 
 	</div>
 	<div id="application">
-		<h2>APPLICATION TIMELINE</h2>
+		<h2>Application Timeline</h2>
 
 		<section>
-			<h2>SHOUTOUTS</h2>
+			<h2>Shoutouts</h2>
 			<p>
 				A big shoutout to career dev. They are awesome
 			<p/>
@@ -211,6 +220,9 @@
 	<script src="https://cdn.bootcss.com/typed.js/1.1.4/typed.min.js"></script>
 	<script src="assets/js/particles.js"></script>
 	<script src="assets/js/app.js"></script>
+	<script src="assets/js/function.js"></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=YAIzaSyCHQwS2KH_ljT6JkRTl5p0ax-qRiJaGYOE callback=gmap">
+	</script>
 	<!-- Used by particles.js to change the looks of the particles, modify this file -->
 
 	<script>

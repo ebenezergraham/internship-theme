@@ -8,7 +8,7 @@ function gmap() {
         var content = '<div id="content">'+
             '<h6 id="firstHeading" class="pointerhead">Cim Finance Head Office</h6>'+
             '<div id="pointercontent">'+
-            '<p></p>'
+            '<p></p>'+
             '</div>'+
             '</div>';
 
@@ -22,6 +22,6 @@ function gmap() {
           title: 'Cim Finance Head Office'
         });
         marker.addListener('click', function() {
-          infowindow.open(map, marker);
+          infopane.open(map, marker);
         });
       }
