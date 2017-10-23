@@ -8,11 +8,12 @@ html, body, div, span,  h1, h2, h3, h4, h5, h6, p, blockquote, pre, a,  em, img,
 		border: 0;
 		font-size: 100%;
 		font-family: poppins;
+		text-rendering: optimizeLegibility;
 	}
 
 	body {
 		line-height: 1;
-
+		background: linear-gradient(135deg, #00c4cc 25%, #016BC0 75%);
 	}
 
 	ol, ul {
@@ -66,13 +67,32 @@ h6{
 	 position: fixed;
 	 display: none;
 	 background-color: #073642;
-	 width: 200px;
+	 width: 215px;
 	 height: 100%;
 	 padding: 10px;
+	 z-index: 1000;
  }
+ .sub-heading{
+	text-align: center;
+
+ }
+
  .side-menu ul li {
 
  }
+.intro{
+	text-align: center;
+	font: 400;
+	width: 70%;
+	margin: 0 15%;
+}
+
+.thoughts{
+	text-align: center;
+	font: 400;
+	width: 70%;
+	margin: 0 15%;
+}
 
  #menu-toggle{
 	 position: fixed;
@@ -90,6 +110,10 @@ h6{
  }
  #side-menu-close{
 	 float: right;
+	 position: relative;
+	 top: -32px;
+	 color: white;
+	 right: 15px;
  }
 	.card{
 		width: 400px;
