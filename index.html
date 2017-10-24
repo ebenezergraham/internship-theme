@@ -8,6 +8,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="assets/css/font-awesome.min.css" />
 	<link rel="stylesheet" href="assets/css/main.css" />
+	 <link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css"  media="screen,projection"/>
 
 </head>
 
@@ -233,14 +234,14 @@
 	<!-- Scripts -->
 	<!-- The integrity and crossorigin attributes are used for Subresource Integrity (SRI) checking. -->
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
 	<script src="https://cdn.bootcss.com/typed.js/1.1.4/typed.min.js"></script>
 	<script src="assets/js/particles.js"></script>
 	<script src="assets/js/app.js"></script>
 	<script src="assets/js/function.js"></script>
 	<script src="assets/js/gmap.js"></script>
-	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdcc9H9QD9jDA2bm8VdnEaFCjDt1krWOQ&callback=googleMap"
-	</script>
-	<!-- Used by particles.js to change the looks of the particles, modify this file -->
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdcc9H9QD9jDA2bm8VdnEaFCjDt1krWOQ&callback=googleMap"></script>
+	<script type="text/javascript" src="assets/js/materialize.min.js"></script>
 
 	<script>
 		$(function() {
@@ -252,18 +253,7 @@
 			});
 		});
 		$(document).ready(function(){
-    $('.carousel').carousel($('.carousel').carousel('next');
-$('.carousel').carousel('next', 3); // Move next n times.
-
-// Previous slide
-$('.carousel').carousel('prev');
-$('.carousel').carousel('prev', 4); // Move prev n times.
-
-// Set to nth slide
-$('.carousel').carousel('set', 4);
-
-// Destroy carousel
-$('.carousel').carousel('destroy'););
+    $('.carousel').carousel();
   });
 
 	</script>
