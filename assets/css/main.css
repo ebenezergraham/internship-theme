@@ -126,12 +126,10 @@ h6{
 	margin: 4px;
 	background: white;
 	padding: 30px;
-	position: relative;
 }
 
 #background-left{
 	width: 400px;
-	float: left;
 }
 #background-right{
 
