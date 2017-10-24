@@ -32,6 +32,7 @@ h2{
 	margin: 0.4em;
 	text-align: center;
 	color: white;
+	padding: 20px;
 }
 
 h3{
@@ -75,7 +76,6 @@ h6{
  }
  .sub-heading{
 	text-align: center;
-
  }
 
  .side-menu ul li {
@@ -83,9 +83,11 @@ h6{
  }
 .intro{
 	text-align: center;
-	font: 400;
+	font: 200;
 	width: 70%;
 	margin: 0 15%;
+	color: white;
+	padding: 50px;
 }
 
 .thoughts{
@@ -116,16 +118,23 @@ h6{
 	 color: white;
 	 right: 15px;
  }
-	.card{
-		width: 400px;
-		height: auto;
-		box-shadow: 2px 2px 10px rgb(0,0,0);
-		padding: 3px;
-		margin: 4px;
-		background: white;
-		padding: 30px;
+.card{
+	width: 400px;
+	height: auto;
+	box-shadow: 2px 2px 10px rgb(0,0,0);
+	padding: 3px;
+	margin: 4px;
+	background: white;
+	padding: 30px;
+	position: relative;
 }
 
+#background-left{
+	width: 400px;
+}
+#background-right{
+	float: right;
+}
 #side-menu-links{
 	margin-top: 50px;
 }
