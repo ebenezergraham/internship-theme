@@ -11,7 +11,7 @@
 	<link rel="stylesheet" href="assets/css/owl.carousel.css" />
 	<link rel="stylesheet" type="text/css" href="assets/css/vertical-timeline.css">
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-	<!-- Owl scripts-->
+	<script src="assets/js/facebookcomment.js"></script>
 </head>
 
 <body>
@@ -21,31 +21,24 @@
 	<nav id="menu">
 
 		<ul class="links">
-			<li><a href="index.html">HOME</a></li>
-			<li><a href="#background">BACKGROUND</a></li>
-			<li><a href="#blog">BLOG</a></li>
-			<li><a href="#application">APPLICATION</a></li>
-			<li><a href="#diary">DIARY</a></li>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="#background">Background</a></li>
+			<li><a href="#blog">Blog</a></li>
+			<li><a href="#application">Application</a></li>
+			<li><a href="#diary">Diary</a></li>
 		</ul>
 	</nav>
 
 	<nav class="side-menu">
-
+<i class="fa fa-arrows-alt" title="Close" id="side-menu-close"></i>
 		<div>
-			<i class="fa fa-arrows-alt" title="Close" id="side-menu-close"></i>
+
 			<ul class="links" id="side-menu-links">
-				<li><a href="index.html">HOME</a></li>
-				<li><a href="#background">BACKGROUND</a></li>
-				<li><a href="#blog">BLOG</a></li>
-				<li><a href="#application">APPLICATION</a></li>
-				<li><a href="#diary">DIARY</a></li>
-			</ul>
-			<hr />
-			<ul class="icons">
-				<li><a href="https://www.twitter.com/ebenezergraham" class="fa fa-twitter" title="Twitter"></a></li>
-				<li><a href="https://www.linkedin.com/in/ebenezer-graham" class="fa fa-linkedin" title="LinkedIn"></a></li>
-				<li><a href="https://www.instagram.com/ebenezergraham/" class="fa fa-instagram" title="Instagram"></a></li>
-				<li><a href="https://github.com/ebenezergraham/" class="fa fa-github" title="GitHub"></a></li>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="#background">Background</a></li>
+				<li><a href="#blog">Blog</a></li>
+				<li><a href="#application">Application</a></li>
+				<li><a href="#diary">Diary</a></li>
 			</ul>
 		</div>
 	</nav>
@@ -65,7 +58,7 @@
 I am Ebenezer Kwesi Akyen Graham, and I interned with Cim Finance, a subsidiary company of Cim Group. Cim Finance is located at Port Louis, Mauritius and its target market are mainly the people of Mauritius and Rodrigues. As a Computing student, I joined the IT department and participated in special projects that were being undertaken by the department. My supervisor was the manager of the department and I worked with him throughout my internship.</h6>
 			<div class="split background-right">
 				<div class="owl-carousel owl-theme">
-  <div> Your Content </div>
+<div>  <img src="../images/company1.jpg"alt="company image" title="Cim Finance office" class="company-images"></div>
   <div> Your Content </div>
   <div> Your Content </div>
   <div> Your Content </div>
@@ -107,7 +100,7 @@ I am Ebenezer Kwesi Akyen Graham, and I interned with Cim Finance, a subsidiary 
 		<div class="row">
 			<div class="column">
 				<div class="serivce-card">
-					<img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
+					<img src="../images/unionpay.jpg" alt="Jane" style="width:100%">
 					<div class="container">
 						<strong>Factoring Services</strong>
 						<p class="title">CEO & Founder</p>
@@ -118,7 +111,7 @@ I am Ebenezer Kwesi Akyen Graham, and I interned with Cim Finance, a subsidiary 
 			</div>
 			<div class="column">
 				<div class="serivce-card">
-					<img src="/w3images/team2.jpg" alt="Mike" style="width:100%">
+					<img src="../images/unionpay.jpg" alt="Mike" style="width:100%">
 					<div class="container">
 						<strong>Leasing Services</strong>
 						<p class="title">Art Director</p>
@@ -131,7 +124,7 @@ I am Ebenezer Kwesi Akyen Graham, and I interned with Cim Finance, a subsidiary 
 
 			<div class="column">
 				<div class="serivce-card">
-					<img src="/w3images/team2.jpg" alt="Mike" style="width:100%">
+					<img src="../images/unionpay.jpg" alt="Mike" style="width:100%">
 					<div class="container">
 						<strong>Hire Purchase Services</strong>
 						<p class="title">Art Director</p>
@@ -144,7 +137,7 @@ I am Ebenezer Kwesi Akyen Graham, and I interned with Cim Finance, a subsidiary 
 
 			<div class="column">
 				<div class="serivce-card">
-					<img src="/assets/images/unionpay.jpg" alt="UnionPay" style="width:100%">
+					<img src="../images/unionpay.jpg" alt="UnionPay" style="width:100%">
 					<div class="container">
 						<strong>UnionPay Card Services</strong><br/> UnionPay Online Payment (UPOP) is accepted by over 10 million foreign online merchants in about 200
 						</p>
@@ -155,11 +148,13 @@ I am Ebenezer Kwesi Akyen Graham, and I interned with Cim Finance, a subsidiary 
 		</div>
 	</section>
 	<div class="parallax">
-		<hr class="parallax-line" />
 	</div>
 	<section>
 		<div id="blog">
 			<h2>Blog</h2>
+			<div id="fb-root">
+			<div class="fb-comments" data-href="https://ebenezergraham.me" data-numposts="5"></div>
+			</div>
 		</div>
 		<h2>Diary</h2>
 		<h4 class="sub-heading">What I would do differently</h4>
@@ -193,7 +188,6 @@ I am Ebenezer Kwesi Akyen Graham, and I interned with Cim Finance, a subsidiary 
 		</div>
 	</section>
 	<div class="parallax" id="second-parallax">
-		<hr class="parallax-line" />
 	</div>
 
 	<div id="application">
@@ -275,5 +269,4 @@ I am Ebenezer Kwesi Akyen Graham, and I interned with Cim Finance, a subsidiary 
 	<script src="assets/js/owl.carousel.min.js"></script>
 	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdcc9H9QD9jDA2bm8VdnEaFCjDt1krWOQ&callback=googleMap"></script>
 </body>
-
 </html>
