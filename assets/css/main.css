@@ -1,232 +1,250 @@
 @charset "UTF-8";
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700");
-
-html, div, span,  h1, h2, h3, h4, h5, h6, p, blockquote, pre, a,  em, img, ins, kbd, q, s, small,  strong, b, u, i, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, header, menu, nav,  section, summary, time, mark, audio, video {
-		margin: 0;
-		padding: 0;
-		border: 0;
-		font-family: poppins;
-		font-size: 100%;
-
-	}
-
-	body {
-		line-height: 1;
-		background: linear-gradient(135deg, #b5ce70 25%, #082c23 75%);
-
-
-		margin: 0;
-	}
-
-	ol, ul {
-		list-style: none;
-	}
-
-h1{
-	font-size: 1.5em;
-	font-weight: 600;
-	margin: 0.5em;
+html, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, em, img, ins, kbd, q, s, small, strong, b, u, i, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, header, menu, nav, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: poppins;
+  font-size: 100%;
 }
 
-h2{
-	font-size:1.4em;
-	font-weight: 600;
-	margin: 0.4em;
-	text-align: center;
-	color: white;
-	padding: 20px;
+p {
+  font-size: 15px;
+  line-height: 1.4;
+  font-weight: 300;
 }
 
-h3{
-	font-size: 1.3em;
-	font-weight: 600;
-	margin: 0.3em;
+body {
+  line-height: 1;
+  background: linear-gradient(135deg, #b5ce70 25%, #082c23 75%);
+  margin: 0;
 }
 
-h4{
-	font-size: 1.2em;
-	font-weight: 600;
-	margin: 0.3em;
+ol, ul {
+  list-style: none;
 }
 
-h5{
-	font-size: 1.1em;
-	font-weight: 600;
-	margin: 0.1em;
+h1 {
+  font-size: 1.5em;
+  font-weight: 600;
+  margin: 0.5em;
 }
 
-h6{
-	font-size: 1em;
-	font-weight: 600;
-	margin: 0.1em;
+h2 {
+  font-size: 1.4em;
+  font-weight: 600;
+  margin: 0.4em;
+  text-align: center;
+  color: white;
+  padding: 20px;
 }
 
- #menu{
-	 float: right;
-	 padding: 15px 5px;
-	position: relative;
- }
-
- .side-menu{
-	 position: fixed;
-	 display: none;
-	 background-color: #aeaeae;
-	 width: 215px;
-	 height: 100%;
-	 padding: 10px;
-	 z-index: 1000;
- }
- .sub-heading{
-	text-align: center;
- }
-
- .side-menu ul li {
-
- }
-.intro{
-	text-align: center;
-	font: 100;
-	font-size: 18px;
-	width: 70%;
-	margin: 0 15%;
-	color: white;
-	padding: 50px;
+h3 {
+  font-size: 1.3em;
+  font-weight: 600;
+  margin: 0.3em;
 }
 
-.thoughts{
-	text-align: center;
-	font: 400;
-	width: 70%;
-	margin: 0 15%;
+h4 {
+  font-size: 1.2em;
+  font-weight: 600;
+  margin: 0.3em;
 }
 
- #menu-toggle{
-	 position: fixed;
-	 left: 20px;
-	 top: 28px;
-	 color: white;
-	 z-index: 10;
- }
+h5 {
+  font-size: 1.1em;
+  font-weight: 600;
+  margin: 0.1em;
+}
 
- #side-menu-close{
-	 float: right;
-	 position: relative;
-	 top: -32px;
-	 color: white;
-	 right: 15px;
- }
-.card{
-	width: 400px;
-	height: auto;
-	box-shadow: 2px 2px 10px rgb(0,0,0);
-	padding: 3px;
-	margin: 4px;
-	background: white;
-	padding: 30px;
+h6 {
+  font-size: 1em;
+  font-weight: 400;
+  margin: 0.1em;
+  line-height: 1.5;
 }
-#application-div{
-	padding: 0 15%;
+
+#menu {
+  float: right;
+  padding: 15px 5px;
+  position: relative;
 }
+
+.side-menu {
+  position: fixed;
+  display: none;
+  background-color: #aeaeae;
+  width: 215px;
+  height: 100%;
+  padding: 10px;
+  z-index: 1000;
+}
+
+.sub-heading {
+  text-align: center;
+}
+
+.side-menu ul li {}
+
+.intro {
+  text-align: center;
+  font-size: 18px;
+  width: 80%;
+  margin: 0 10%;
+  color: white;
+}
+
+.split {
+  height: 100%;
+  width: 50%;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#menu-toggle {
+  position: fixed;
+  left: 20px;
+  top: 28px;
+  color: white;
+  z-index: 10;
+}
+
+#side-menu-close {
+  float: right;
+  position: relative;
+  top: -32px;
+  color: white;
+  right: 15px;
+}
+
+.card {
+  width: 90%;
+  height: auto;
+  box-shadow: 2px 2px 10px rgb(0, 0, 0);
+  margin: 2%;
+  background: white;
+  padding: 2em;
+}
+
+#application-div {
+  padding: 0 15%;
+}
+
 .appcard {
-	height: auto;
-	box-shadow: 2px 2px 10px rgb(0,0,0);
-	background: white;
-	padding: 30px;
+  height: auto;
+  box-shadow: 2px 2px 10px rgb(0, 0, 0);
+  background: white;
+  padding: 30px;
 }
 
-#background-left{
-	width: 400px;
+.background-left {
+  left: 0;
 }
-#background-right{
 
+.background-right {
+	right:0;
+	float: left;
 }
-#side-menu-links{
-	margin-top: 50px;
+.roles-card {
+	height: 100px;
 }
-#side-menu-links li{
-	display: block;
-	margin: 1.5em 1.5em;
+#side-menu-links {
+  margin-top: 50px;
 }
+
+#side-menu-links li {
+  display: block;
+  margin: 1.5em 1.5em;
+}
+
 .links li {
-	display: inline;
-	margin: 20px 25px;
+  display: inline;
+  margin: 20px 25px;
 }
 
 .links li a {
-	text-decoration: none;
- font-size: 0.8em;
- display: inline;
- color: #fff;
- font-weight: 600;
+  text-decoration: none;
+  font-size: 0.8em;
+  display: inline;
+  color: #fff;
+  font-weight: 600;
 }
 
-.links li a:hover{
-	text-decoration-style: wavy;
+.links li a:hover {
+  text-decoration-style: wavy;
 }
 
-.banner-full{
-	background-image:url(../images/bush.jpeg);
-	background-size:cover;
-
+.banner-full {
+  background-image: url(../images/bush.jpeg);
+  background-size: cover;
 }
 
-#particles-js{
-text-align: center;
-vertical-align: middle;
+#particles-js {
+  text-align: center;
+  vertical-align: middle;
 }
 
-#typed-wrapper{
-	position: relative;
-	text-align: center;
-	top: -450px;
-	font-size: 2.5em;
-	font-weight: bold;
-	color: #fff;
-	box-sizing: inherit;
-	width: 500px;
-	margin-left: 30%;
-}
-#calltoaction{
-	position: relative;
-	height: 50px;
-	width: 200px;
-	top: -400px;
-	left: 600px;
-	background-color: #fff;
-	border: #1d1d1d;
-	color: #aeaeae;
-}
-#map{
-	height: 400px;
-}
-#typed{
-	text-align: center;
-	width: inherit;
+#typed-wrapper {
+  position: relative;
+  text-align: center;
+  top: -450px;
+  font-size: 2.5em;
+  color: #fff;
+  box-sizing: inherit;
+  width: 100%;
 }
 
-.parallax{
-	background-image: url(../images/umbrella.jpg);
-	height: 300px;
-	background-size: cover;
-	background-attachment: fixed;
+#calltoaction {
+  position: relative;
+  height: 40px;
+  width: 15%;
+  bottom: 30em;
+  left: 43%;
+  background-color: rgba(255,255,255,0.5);
+	color: black;
+	border: 2px solid ##456e32;
+}
 
+#calltoaction:hover {
+    background-color: #456e32;
+    color: white;
 }
-.parallax-line{
-	width: 200px;
-	height: 0;
-	margin-top: 50px;
+
+#map {
+  height: 400px;
 }
+
+#typed {
+  text-align: center;
+  width: inherit;
+}
+
+.parallax {
+  background-image: url(../images/umbrella.jpg);
+  height: 300px;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.parallax-line {
+  width: 200px;
+  height: 0;
+  margin-top: 50px;
+}
+
 .carousel {
   overflow: hidden;
   width: 100%;
   height: 400px;
   -webkit-perspective: 500px;
-          perspective: 500px;
+  perspective: 500px;
   -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
+  transform-style: preserve-3d;
   -webkit-transform-origin: 0% 50%;
-          transform-origin: 0% 50%;
+  transform-origin: 0% 50%;
 }
 
 .carousel .carousel-item {
@@ -236,58 +254,67 @@ vertical-align: middle;
   top: 0;
   left: 0;
 }
-  .carousel .carousel-item > img {
-    width: 100%;
-  }
 
-#second-parallax{
-	background-image: url(../images/umbrella.jpg);
+.carousel .carousel-item>img {
+  width: 100%;
+}
+
+#second-parallax {
+  background-image: url(../images/umbrella.jpg);
 }
 
 #footer {
-	padding: 4em 0 2em 0 ;
-	background: #fff;
-	text-align: center;
-	height: 20%;
-
-	}
+  padding: 4em 0 2em 0;
+  background: #1d1d1d;
+  text-align: center;
+  height: 30%;
+}
 
 #footer ul.icons li {
-    display: inline-block;
-    padding: 0 1rem 0 0;
+  display: inline-block;
+  padding: 0 1rem 0 0;
 }
 
 .label {
-	margin: 10px;
-	font-size: 0.7em;
+  margin: 10px;
+  font-size: 0.7em;
 }
+
 .label a {
-	text-decoration: none;
+  text-decoration: none;
 }
+
 #footer a {
-	color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.5);
 }
 
 #footer a:hover {
-	color: #FFF;
+  color: #FFF;
 }
 
 #footer .copyright {
-	color: #bbb;
-	font-size: 0.7em;
-	margin: 20px;
-	padding: 0;
-	text-align: center;
+  color: #bbb;
+  font-size: 0.9em;
+  margin: 20px;
+  padding: 0;
+  text-align: center;
 }
 
-
 /* Slideshow container */
+
+#diary-quote {
+  background-image: url(../images/sliderbg.jpg);
+}
+
 .slideshow-container {
   position: relative;
-  background: #f1f1f1f1;
+  background-image: url(../images/sliderbg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /* Slides */
+
 .mySlides {
   display: none;
   padding: 80px;
@@ -295,6 +322,7 @@ vertical-align: middle;
 }
 
 /* Next & previous buttons */
+
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -310,6 +338,7 @@ vertical-align: middle;
 }
 
 /* Position the "next button" to the right */
+
 .next {
   position: absolute;
   right: 0;
@@ -317,12 +346,14 @@ vertical-align: middle;
 }
 
 /* On hover, add a black background color with a little bit see-through */
+
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0, 0, 0, 0.8);
   color: white;
 }
 
 /* The dot/bullet/indicator container */
+
 .dot-container {
   text-align: center;
   padding: 20px;
@@ -330,6 +361,7 @@ vertical-align: middle;
 }
 
 /* The dots/bullets/indicators */
+
 .dot {
   cursor: pointer;
   height: 15px;
@@ -342,64 +374,77 @@ vertical-align: middle;
 }
 
 /* Add a background color to the active dot/circle */
+
 .active, .dot:hover {
   background-color: #717171;
 }
 
 /* Add an italic font style to all quotes */
-q {font-style: italic;}
+
+q {
+  font-style: italic;
+}
 
 /* Add a blue color to the author */
-.author {color: cornflowerblue;}
+
+.author {
+  color: cornflowerblue;
+}
 
 .column {
-    float: left;
-    width: 33.3%;
-    margin-bottom: 16px;
-    padding: 0 8px;
+  float: left;
+  width: 23.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+
 }
 
 /* Display the columns below each other instead of side by side on small screens */
+
 @media (max-width: 650px) {
-    .column {
-        width: 100%;
-        display: block;
-    }
+  .column {
+    width: 100%;
+    display: block;
+  }
 }
 
 /* Add some shadows to create a card effect */
-.cards {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+.serivce-cards {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 /* Some left and right padding inside the container */
+
 .container {
-    padding: 0 16px;
+  padding: 16px 16px;
+	background-color: white;
 }
 
 /* Clear floats */
+
 .container::after, .row::after {
-    content: "";
-    clear: both;
-    display: table;
+  content: "";
+  clear: both;
+  display: table;
 }
 
 .title {
-    color: grey;
+  color: grey;
 }
 
 .button {
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 8px;
-    color: white;
-    background-color: #000;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
 }
 
 .button:hover {
-    background-color: #555;
+  background-color: #555;
 }

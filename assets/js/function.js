@@ -29,7 +29,7 @@ $('.owl-carousel').owlCarousel();
 $(document).ready(function(){
 $(function() {
   $("#typed").typed({
-    strings: ["Hi There !", "I'm Mr Ebenezer Graham", "I intern with Cim Finance", "And I love it"],
+    strings: ["Hi There!", "Welcome to Ebenezer Graham's Website", "I intern with Cim Finance", "This has been an enlightening experience"],
     typeSpeed: 100,
     loop: true,
     loopCount: Infinity
