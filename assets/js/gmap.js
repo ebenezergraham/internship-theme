@@ -6,7 +6,7 @@ function googleMap() {
         });
 
         var content = '<div id="content">'+
-            '<h6 id="firstHeading" class="pointerhead">Cim Finance Website</h6>';
+            '<a href="https://www.cimfinance.mu" id="firstHeading" class="pointerhead">Cim Finance Website</a>';
 
         var infopane = new google.maps.InfoWindow({
           content: content
