@@ -38,7 +38,7 @@ function showSlides(n) {
   function outshowSlides(n) {
     var x;
     var outslides = document.getElementsByClassName("outSlides");
-    var outdots = document.getElementsByClassName("dot");
+    var outdots = document.getElementsByClassName("outdot");
     if (n > outslides.length) {outslideIndex = 1}
       if (n < 1) {outslideIndex = outslides.length}
       for (x = 0; x < outslides.length; x++) {
