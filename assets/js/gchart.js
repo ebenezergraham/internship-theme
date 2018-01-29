@@ -1,9 +1,7 @@
 google.charts.load('current', {'packages':['gantt']});
     google.charts.setOnLoadCallback(drawChart);
 
-    function daysToMilliseconds(days) {
-          return days * 24 * 60 * 60 * 1000;
-        }
+
 
     function drawChart() {
 
@@ -44,7 +42,7 @@ google.charts.load('current', {'packages':['gantt']});
          new Date(2017, 11, 27), new Date(2017, 12, 3), null, 100, null],
         ['12', 'Independent Rework', 'Implementation',
          new Date(2017, 12, 4), new Date(2018, 1, 10), null, 100, null],
-        ['13', 'Finishing touches to Website and Group Report Revision ', 'Implementation',
+        ['13', 'Adding finishing touches to the website ', 'Implementation',
          new Date(2018, 1, 11), new Date(2018, 1, 22), null, 100, null],
         ['14', 'Finalizing Website and Group Report', 'Submissions',
           new Date(2018, 1, 22), new Date(2018, 1, 28), null, 100, null]
