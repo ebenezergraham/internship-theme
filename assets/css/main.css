@@ -94,6 +94,9 @@ h6 {
   color: white;
     margin: 5%;
 }
+.locationhead, .p-plan {
+    margin-bottom: 2%;
+}
 
 .intro {
   text-align: center;

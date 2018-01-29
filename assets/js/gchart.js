@@ -32,24 +32,26 @@ google.charts.load('current', {'packages':['gantt']});
          new Date(2017, 10, 30), new Date(2017, 11, 5), null, 100, null],
         ['6', 'Writing Group Report ', 'Software Design',
           new Date(2017, 10, 9), new Date(2018, 1, 28), null, 100, null],
-        ['7', 'Intitial Website Increment and basic template', 'Implementation',
-         new Date(2017, 11, 6), new Date(2017, 11, 12), null, 100, null],
-        ['8', 'Second Website Increment', 'Implementation',
+        ['7', 'Development of basic template', 'Software Design',
+         new Date(2017, 10, 16), new Date(2017, 11, 5), null, 100, null],
+        ['8', 'Intitial Website Increment', 'Implementation',
+          new Date(2017, 11, 6), new Date(2017, 11, 12), null, 100, null],
+        ['9', 'Second Website Increment', 'Implementation',
          new Date(2017, 11, 13), new Date(2017, 11, 19), null, 100, null],
-        ['9', 'Third Website Increment ', 'Implementation',
+        ['10', 'Third Website Increment ', 'Implementation',
          new Date(2017, 11, 20), new Date(2017, 11, 26), null, 100, null],
-        ['10', 'Fourth Website Increment', 'Implementation',
+        ['11', 'Fourth Website Increment', 'Implementation',
          new Date(2017, 11, 27), new Date(2017, 12, 3), null, 100, null],
-        ['11', 'Independent Rework', 'Implementation',
+        ['12', 'Independent Rework', 'Implementation',
          new Date(2017, 12, 4), new Date(2018, 1, 10), null, 100, null],
-        ['12', 'Finishing touches to Website and Group Report Revision ', 'Implementation',
+        ['13', 'Finishing touches to Website and Group Report Revision ', 'Implementation',
          new Date(2018, 1, 11), new Date(2018, 1, 22), null, 100, null],
-        ['12', 'Finalizing Website and Group Report', 'Submissions',
-          new Date(2018, 1, 18), new Date(2018, 1, 28), null, 100, null]
+        ['14', 'Finalizing Website and Group Report', 'Submissions',
+          new Date(2018, 1, 22), new Date(2018, 1, 28), null, 100, null]
       ]);
 
       var options = {
-        height: 400,
+        height: 500,
         gantt: {
           trackHeight: 30,
           criticalPathEnabled: true,
