@@ -150,7 +150,7 @@ h6 {
 }
 @media(max-width: 650px) {
   #menu{
-    font-size: 0.9em;
+    display: none;
   }
 }
 @media(max-width: 650px) {
@@ -264,12 +264,8 @@ a:link {
 }
 @media(max-width: 650px) {
   #typed-wrapper{
-    bottom: 9em;
-    font-size: 0.9em;
-  }
-  #calltoaction{
-    bottom: 8em;
-    left: 5em;
+    bottom: 5em;
+    font-size: 1em;
   }
 }
 
