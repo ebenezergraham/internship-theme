@@ -1,12 +1,16 @@
 google.charts.load('current', {'packages':['gantt']});
     google.charts.setOnLoadCallback(drawChart);
 
+    function daysToMilliseconds(days) {
+          return days * 24 * 60 * 60 * 1000;
+        }
+
     function drawChart() {
 
       var data = new google.visualization.DataTable();
       data.addColumn('string', 'Task ID');
       data.addColumn('string', 'Task Name');
-      data.addColumn('string', 'Resource');
+      data.addColumn('string', 'Project Plan');
       data.addColumn('date', 'Start Date');
       data.addColumn('date', 'End Date');
       data.addColumn('number', 'Duration');
@@ -14,40 +18,49 @@ google.charts.load('current', {'packages':['gantt']});
       data.addColumn('string', 'Dependencies');
 
       data.addRows([
-        ['2014Spring', 'Spring 2014', 'spring',
-         new Date(2014, 2, 22), new Date(2014, 5, 20), null, 100, null],
-        ['2014Summer', 'Summer 2014', 'summer',
-         new Date(2014, 5, 21), new Date(2014, 8, 20), null, 100, null],
-        ['2014Autumn', 'Autumn 2014', 'autumn',
-         new Date(2014, 8, 21), new Date(2014, 11, 20), null, 100, null],
-        ['2014Winter', 'Winter 2014', 'winter',
-         new Date(2014, 11, 21), new Date(2015, 2, 21), null, 100, null],
-        ['2015Spring', 'Spring 2015', 'spring',
-         new Date(2015, 2, 22), new Date(2015, 5, 20), null, 50, null],
-        ['2015Summer', 'Summer 2015', 'summer',
-         new Date(2015, 5, 21), new Date(2015, 8, 20), null, 0, null],
-        ['2015Autumn', 'Autumn 2015', 'autumn',
-         new Date(2015, 8, 21), new Date(2015, 11, 20), null, 0, null],
-        ['2015Winter', 'Winter 2015', 'winter',
-         new Date(2015, 11, 21), new Date(2016, 2, 21), null, 0, null],
-        ['Football', 'Football Season', 'sports',
-         new Date(2014, 8, 4), new Date(2015, 1, 1), null, 100, null],
-        ['Baseball', 'Baseball Season', 'sports',
-         new Date(2015, 2, 31), new Date(2015, 9, 20), null, 14, null],
-        ['Basketball', 'Basketball Season', 'sports',
-         new Date(2014, 9, 28), new Date(2015, 5, 20), null, 86, null],
-        ['Hockey', 'Hockey Season', 'sports',
-         new Date(2014, 9, 8), new Date(2015, 5, 21), null, 89, null]
+        ['0', 'Understanding the project specifications', 'Requirements Engineering',
+         new Date(2017, 9, 27), new Date(2017, 10, 1), null, 100, null],
+        ['1', 'Researching  web technologies', 'Requirements Engineering',
+         new Date(2017, 10, 2), new Date(2017, 10, 8), null, 100, null],
+        ['2', 'Wireframe design', 'Software Design',
+         new Date(2017, 10, 9), new Date(2017, 10, 15), null, 100, null],
+        ['3', 'Acquire 3 web technologies', 'Requirements Engineering',
+         new Date(2017, 10, 16), new Date(2017, 10, 22), null, 100, null],
+        ['4', 'Finalize website wireframe', 'Software Design',
+         new Date(2017, 10, 23), new Date(2017, 10, 29), null, 100, null],
+        ['5', 'Decide Implementation strategy', 'Software Design',
+         new Date(2017, 10, 30), new Date(2017, 11, 5), null, 100, null],
+        ['6', 'Writing Group Report ', 'Software Design',
+          new Date(2017, 10, 9), new Date(2018, 1, 28), null, 100, null],
+        ['7', 'Intitial Website Increment and basic template', 'Implementation',
+         new Date(2017, 11, 6), new Date(2017, 11, 12), null, 100, null],
+        ['8', 'Second Website Increment', 'Implementation',
+         new Date(2017, 11, 13), new Date(2017, 11, 19), null, 100, null],
+        ['9', 'Third Website Increment ', 'Implementation',
+         new Date(2017, 11, 20), new Date(2017, 11, 26), null, 100, null],
+        ['10', 'Fourth Website Increment', 'Implementation',
+         new Date(2017, 11, 27), new Date(2017, 12, 3), null, 100, null],
+        ['11', 'Independent Rework', 'Implementation',
+         new Date(2017, 12, 4), new Date(2018, 1, 10), null, 100, null],
+        ['12', 'Finishing touches to Website and Group Report Revision ', 'Implementation',
+         new Date(2018, 1, 11), new Date(2018, 1, 22), null, 100, null],
+        ['12', 'Finalizing Website and Group Report', 'Submissions',
+          new Date(2018, 1, 18), new Date(2018, 1, 28), null, 100, null]
       ]);
 
       var options = {
         height: 400,
         gantt: {
-          trackHeight: 30
+          trackHeight: 30,
+          criticalPathEnabled: true,
+          criticalPathStyle: {
+            stroke: '#e64a19',
+            strokeWidth: 5
+          }
         }
       };
 
-      var chart = new google.visualization.Gantt(document.getElementById('chart_div'));
+      var chart = new google.visualization.Gantt(document.getElementById('plan-div'));
 
       chart.draw(data, options);
     }

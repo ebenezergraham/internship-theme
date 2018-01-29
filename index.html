@@ -18,16 +18,7 @@
 
 	<!-- Nav -->
 	<i class="fa fa-bars" id="menu-toggle" title="Menu"></i>
-	<nav id="menu">
 
-		<ul class="links">
-			<li><a href="index.html">Home</a></li>
-			<li><a href="#background">Background</a></li>
-			<li><a href="#blog">Blog</a></li>
-			<li><a href="#application">Application</a></li>
-			<li><a href="#diary">Diary</a></li>
-		</ul>
-	</nav>
 
 	<nav class="side-menu">
 		<i class="fa fa-arrows-alt" title="Close" id="side-menu-close"></i>
@@ -45,9 +36,18 @@
 
 
 	<!-- Banner -->
-	<section class="banner-full">
+	<section class="banner-full p-overlay overlay">
 		<!-- Space for the moving particles to occupy. -->
-		<div id="particles-js"> </div>
+		<div class=""id="particles-js"><nav id="menu">
+
+			<ul class="links">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="#background">Background</a></li>
+				<li><a href="#blog">Blog</a></li>
+				<li><a href="#application">Application</a></li>
+				<li><a href="#diary">Diary</a></li>
+			</ul>
+		</nav> </div>
 		<div id="typed-wrapper"> <span id="typed"> </span> </div>
 		<button id="calltoaction"><a href="#blog">Leave a Message</a></button>
 	</section>
@@ -61,12 +61,10 @@ I am Ebenezer Kwesi Akyen Graham, and I interned with Cim Finance, a subsidiary 
 					<div> <img src="assets/images/company1.jpg" alt="company image" title="Cim Finance office" class="company-images"></div>
 					<div> <img src="assets/images/company2.jpg" alt="company image" title="Cim Finance office" class="company-images"></div>
 					<div> <img src="assets/images/company3.jpg" alt="company image" title="Cim Finance office" class="company-images"></div>
-					<div> <img src="assets/images/company4.jpg" alt="company image" title="Cim Finance office" class="company-images"></div>
 				</div>
 			</div>
 			<div class="split background-left">
-				<p class="card">Cim Finance offers financial solutions to individual consumers, SMEs and large corporates. For this reason, the company employs over 1000 employees and over 80 counters spread all over Mauritius and Rodrigues and currently expanding to other countries.
-					</p>
+				<p class="card">Cim Finance offers financial solutions to individual consumers, SMEs and large corporates. For this reason, the company employs over 1000 employees and over 80 counters spread all over Mauritius and Rodrigues.</p>
 				<p class="card"> The company offers Leasing, Factoring and Hire Purchase Services. Cim Finance falls under the finance and business services sector in Mauritius. However, it is a non-banking financial institution.</p>
 			</div>
 		</section>
@@ -79,16 +77,16 @@ I am Ebenezer Kwesi Akyen Graham, and I interned with Cim Finance, a subsidiary 
 		<h2>Roles</h2>
 		<h6 class="intro">Below are some of the takes/roles I undertook during my internship </h6>
 		<div class="split background-right">
-			<p class="card roles-card"> I study a java based open source software, gather intel from prospective users and then set up/ customize the software on the server to revamp a core service in the company.</p>
-			<p class="card roles-card"> I had the task of assisting the systems administrators in expanding the office networks. I assisted by setting up multiple end devices and troubleshooting exist devices in multiple office spaces</p>
+			<p class="card roles-card"> I refactored 3 critical systems to make them autonomous and functional in a disaster recovery site. Hence, I integrated code that detects the software’s environment and configures the applications accordingly. Therefore the software could function
+				regardless of its host server's location.</p>
+			<p class="card roles-card"> I assisted the systems administrators in expanding the office networks. I assisted by setting up multiple end devices and troubleshooting exist devices in multiple office spaces</p>
 
 		</div>
 		<div class="split background-left">
 			<p class="card roles-card">I had to debug the programs during the validation and verification phase. I assisted by stepping through the codes and reporting abnormalities. Hence, I validated the programs and confirmed readiness to ship after performing release tests and deployment
 				simulations
 			</p>
-			<p class="card roles-card">I refactor 3 critical software to make them autonomous and functional in their disaster recovery site. Hence, I integrated code that detects the software’s environment and configures the applications accordingly. Therefore the software could function
-				regardless of its host server's location</p>
+			<p class="card roles-card">I study a java based open source software, gather intel from prospective users and then set up/ customize the software on the server to revamp a core service in the company.</p>
 		</div>
 	</section>
 
@@ -114,7 +112,7 @@ I am Ebenezer Kwesi Akyen Graham, and I interned with Cim Finance, a subsidiary 
 					<div class="container">
 						<strong>Leasing Services</strong>
 						<br/><br/>
-						<p>Cim Finance leasing solutions range for vehicles and equipment. It is tailored to the needs of their customers and boosts their financial security. Repayments ranges from 36 to 84 months.</p>
+						<p>Cim Finance leasing solutions range for vehicles, equipment among others. It is tailored to the needs of their customers and boosts their financial security. Repayments ranges from 36 to 84 months.</p>
 					</div>
 				</div>
 			</div>
@@ -156,8 +154,9 @@ I am Ebenezer Kwesi Akyen Graham, and I interned with Cim Finance, a subsidiary 
 			</div>
 		</div>
 		<h2 id="diary">Diary</h2>
+		<p class="intro">This section contains the project plan and the advice I would give to other students</p>
 		<h4 class="sub-heading">Project Plan</h4>
-		<div id="chart_div"></div>
+		<div id="plan-div"></div>
 		<h4 class="sub-heading">What I would do differently</h4>
 		<div class="slideshow-container" id="diary-quote">
 
