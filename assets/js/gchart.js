@@ -41,7 +41,7 @@ google.charts.load('current', {'packages':['gantt']});
         ['11', 'Fourth Website Increment', 'Implementation',
          new Date(2017, 10, 27), new Date(2017, 11, 3), null, 100, null],
         ['12', 'Independent Rework', 'Implementation',
-         new Date(2017, 10, 4), new Date(2018, 0, 10), null, 100, null],
+         new Date(2017, 11, 4), new Date(2018, 0, 10), null, 100, null],
         ['13', 'Adding finishing touches to the website ', 'Implementation',
          new Date(2018, 0, 11), new Date(2018, 0, 22), null, 100, null],
         ['14', 'Finalizing Website and Group Report', 'Submissions',
